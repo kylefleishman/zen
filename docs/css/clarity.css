@@ -1,0 +1,290 @@
+/*
+Zen V0.0.1
+Copyright 2024, Kyle Fleishman
+MIT License
+*/
+
+
+/* Table of contents
+–––––––––––––––––––––––––
+- Variables
+- Content
+- Containers 
+- Grid
+- Typography
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+- Helpers
+*/
+
+/* Variables
+––––––––––––––––––––––––– */
+:root {
+    --primary-font-color: #222;
+    --link-color: white;
+    --border-color: #111;
+    --heading-font-color: #333;
+    --navbar: #34495e;
+    --footer-navbar: #22222b;
+    --background-color: #f5f5f5;
+    --sidebar-color: #222;
+    --navbar-color: #333;
+    --black: #111;
+    --button-color: #D34558;
+
+    /* Sizes */
+    --content-width: 960px;
+    --content-width-secondary: 500px;
+}
+
+/* Content
+––––––––––––––––––––––––– */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Carme','Roboto',  sans-serif;
+}
+
+html {
+  line-height:1.6;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Raleway", Roboto, Oxygen, Ubuntu, 'Open Sans', sans-serif;
+  color: var(--primary-font-color);
+}
+
+p, ol, ul, dl, table {
+  margin: 0 0 1.5rem 0;
+}
+
+main {}
+
+section {}
+
+
+
+/* Containers
+––––––––––––––––––––––––– */
+.container {
+    max-width: var(--content-width);
+    margin:0 auto;
+  }
+
+.secondary-container {
+    max-width: var(--content-width-secondary);
+    margin:0 auto;
+  }
+
+/* Grid
+––––––––––––––––––––––––– */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+    border: 1px solid grey;
+}
+
+.one-fifth {
+  width: 20%;
+  border: 1px solid grey;
+}
+
+.one-fourth {
+  width: 25%;
+  border: 1px solid grey;
+}
+
+.two-third {
+    width: 66.66%;
+    border: 1px solid grey;
+}
+
+.one-third {
+    width: 33.33%;
+    border: 1px solid grey;
+}
+
+
+/* Typography
+––––––––––––––––––––––––– */
+
+h1, h2, h3, h4, h5 {
+  margin: 1.5rem 0;
+  line-height: 1.2;
+}
+
+h1 { font-size: 3.0rem; }
+h2 { font-size: 2.6rem; }
+h3 { font-size: 2.0rem; font-weight:400; }
+h4 { font-size: 1.4rem; font-weight:400; }
+h5 { font-size: 0.8rem; font-weight:400; }
+
+
+
+/* Buttons
+––––––––––––––––––––––––– */
+
+
+button, .button, .a.button, [type="submit"], [type="button"] {
+  background-color: var(--button-color);
+  cursor: pointer;
+  padding: 1.11em 2em 1.16em;
+  letter-spacing: normal;
+  font-weight: 600;
+  font-size: 1em;
+  background: #D34558;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 0 0.5rem 0;
+  text-align:center;
+}
+
+
+.accent-button, a.accent-button {
+  background: #fe5269;
+}
+
+.round-button, a.round-button {
+  border-radius: 5rem;
+}
+
+.muted-button, a.muted-button {
+  background-color: transparent;
+  border: 2px solid grey;
+  color: black;
+}
+
+.square-button, a.square-button {
+  border-radius:0;
+}
+
+.full-button, a.full-button {
+  display: block;
+  width:100%;
+}
+
+button:hover, .button:hover, .a.button:hover, [type="submit"]:hover, [type="button"]:hover {
+  background: #99313f;
+}
+
+.accent-button:hover, a.accent-button:hover {
+  background: #ffcbd2;
+}
+
+.muted-button:hover, a.muted-button:hover {
+  background-color: transparent;
+  border: 2px solid black;
+}
+
+
+
+/* Forms
+––––––––––––––––––––––––– */
+
+[type="color"], [type="date"], [type="datetime"], [type="datetime-local"], [type="email"], [type="month"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"], [type="week"], [type="time"], select, textarea {
+  width:100%;
+}
+
+
+/* Lists
+––––––––––––––––––––––––– */
+
+
+
+
+
+/* Code
+––––––––––––––––––––––––– */
+
+pre {
+  border: 0;
+  border-radius: 4px;
+  padding: 1rem;
+  tab-size: 2;
+  color: #404040;
+  font-size: 14px;
+  margin: 0 0 1.5rem 0;
+  background: #f8f8f8;
+}
+
+
+
+/* Tables
+––––––––––––––––––––––––– */
+
+table {
+  width:100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid grey;
+}
+
+td {
+  border-bottom: 1px solid grey;
+}
+
+
+
+/* Helpers
+––––––––––––––––––––––––– */
+.center-text {
+  text-align: center;
+}
+
+.align-vertical {
+  vertical-align: center;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.responsive {
+  max-width: 100%;
+}
+
+
+/* Media Queries
+––––––––––––––––––––––––– */
+/* OLD DESKTOP FIRST MOBILE DESIGN D:<  */
+@media screen and (max-width: 1000px) {}
+
+/* Mobile First Media Queries  */
+
+ /* Mobile */
+ @media only screen and (min-width: 480px) {}
+ 
+ /* Tablets */
+ @media only screen and (min-width: 868px) {}
+ 
+ /* Laptops */
+ @media only screen and (min-width: 1000px) {}
+ 
+ /* 4K Monitors */
+ @media only screen and (min-width: 1200px) {} 
