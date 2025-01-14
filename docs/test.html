@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Zen CSS | CSS Framework </title>
+        <meta name="author" content="Kyle Fleishman">
+        <meta name="description" content="CSS Styling Framework">
+        <meta name="viewport" content="width=device-width, intitial-scale=1">
+        <link rel="stylesheet" href="../css/modern-normalize.css">
+        <link rel="icon" href="assets/image1.png">
+    </head>
+    <body>
+        <header>
+            <h3>Zen Component Library and Framework</h3>
+            <nav>
+            </nav>
+        </header>
+
+        <main>
+        <div class="container">
+         
+            <section id="Starting">
+              
+                    <h3>HTML Starting Point</h3>
+                    <p> Basic HTML starting template that defines meta data, CSS file, Javascript file, and favicon image.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;Zen CSS | CSS Framework &lt;/title&gt;
+        &lt;meta name="author" content="Kyle Fleishman"&gt;
+        &lt;meta name="description" content="CSS Styling Framework"&gt;
+        &lt;meta name="viewport" content="width=device-width, intitial-scale=1"&gt;
+        &lt;link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet"&gt;
+        &lt;link rel="stylesheet" href="css/modern-normalize.css"&gt;
+        &lt;link rel="stylesheet" href="css/clarity.css"&gt;
+        &lt;link rel="icon" href="assets/image1.png"&gt;
+      &lt;/head&gt;
+         &lt;body&gt;
+        &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+            </section>
+
+            <section id="Variables">
+              
+              <h3>CSS Variables</h3>
+              <p>The CSS Variables defined in the style sheet.</p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Class</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>--primary-font-color</td>
+                    <td>#222</td>
+                  </tr>
+                  <tr>
+                    <td>--link-color</td>
+                    <td>#fff</td>
+                  </tr>
+                  <tr>
+                    <td>--border-color</td>
+                    <td>#111</td>
+                  </tr>
+                  <tr>
+                    <td>--heading-font-color</td>
+                    <td>#333</td>
+                  </tr>
+                  <tr>
+                    <td>--navbar</td>
+                    <td>#34495e</td>
+                  </tr>
+                  <tr>
+                    <td>--footer-navbar</td>
+                    <td>#22222b</td>
+                  </tr>
+                  <tr>
+                    <td>--background-color</td>
+                    <td>#f5f5f5</td>
+                  </tr>
+                  <tr>
+                    <td>--sidebar-color</td>
+                    <td>#222</td>
+                  </tr>
+                  <tr>
+                    <td>--navbar-color</td>
+                    <td>#333</td>
+                  </tr>
+                  <tr>
+                    <td>--black</td>
+                    <td>#111</td>
+                  </tr>
+                  <tr>
+                    <td>--button-color</td>
+                    <td>#D34558</td>
+                  </tr>
+                </tbody>
+              </table>
+      </section>
+            
+            <section id="Grid">
+                <div class="flex-row">
+                    <div class="full"><h3>Grids</h3> 
+                    <p>The grid is made up of .half, .two-third, and .one-third classes for formatting.</p>
+<pre><code>&lt;div class="container">
+   &lt;div class="flex-row">   
+       &lt;div class="two-third"> Two Thirds &lt;/div&gt;
+       &lt;div class="one-third"> One Third &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+                    
+                    
+                    <div class="half">Half</div>
+                    <div class="half">Half</div>
+
+                    <div class="two-third">Two Thirds</div>
+                    <div class="one-third">One Third</div>
+
+                    <div class="one-third">One Third</div>
+                    <div class="one-third">One Third</div>
+                    <div class="one-third">One Third</div>
+
+                    <div class="one-fourth">One Fourth</div>
+                    <div class="one-fourth">One Fourth</div>
+                    <div class="one-fourth">One Fourth</div>
+                    <div class="one-fourth">One Fourth</div>
+
+                    <div class="one-fifth">One Fifth</div>
+                    <div class="one-fifth">One Fifth</div>
+                    <div class="one-fifth">One Fifth</div>
+                    <div class="one-fifth">One Fifth</div>
+                    <div class="one-fifth">One Fifth</div>
+                </div>
+            </section>
+
+            <section id="Containers">
+                <div class="flex-row">
+                    <div class="full"> <h3>Containers</h3>
+                    <p>There are two containers that are centered with margins.</p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Primary Container</th>
+                            <th>Secondary Container</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>960px</td>
+                            <td>500px</td>
+                          </tr>
+                        </tbody>
+                      </table></div>  
+                </div> 
+            </section>
+
+            <section id="Typography">
+                <div class="flex-row">
+                    <div class="full"> <h3>Typograghy</h3>
+                    <p> The default font size is set to 1rem on the html elemement. Headings are set with the same line-height and margins, any heading above H3 has a font weight of 400.</p>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2> 
+                        <h3>Heading 3</h3> 
+                        <h4>Heading 4</h4> 
+                        <h5>Heading 5</h5> 
+                    
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="Buttons">
+                <article> 
+                <div class="flex-row">
+                    <div class="full"> <h3>Buttons</h3>
+                    <p>Works for all button elements and a .button class.</p>
+                    <button>Button</button>
+                    <input class="button" type="submit" value="Submit">
+                    <input class="button" type="button" value="Input">
+                    <a class="button">Link</a>
+
+                    <h3>Accent Buttons</h3>
+                    <p>.accent-button class which displays secondary color from variables.</p>
+                    <button class="accent-button">Button</button>
+                    <input class="accent-button" type="submit" value="Submit">
+                    <input class="accent-button" type="button" value="Input">
+                    <a class="accent-button button">Link</a>
+
+                    <h3>Muted Buttons</h3>
+                    <p>There are three containers that are centered with margin: 0 auto.</p>
+                    <button class="muted-button">Button</button>
+                    <input class="muted-button"type="submit" value="Submit">
+                    <input class="muted-button" type="button" value="Input">
+                    <a class="muted-button button">Link</a>
+
+                    <h3>Round Buttons</h3>
+                    <p>There are three containers that are centered with margin: 0 auto.</p>
+                    <button class="round-button" class="round-button">Button</button>
+                    <input class="round-button" type="submit" value="Submit">
+                    <input class="round-button" type="button" value="Input">
+                    <a class="round-button button">Link</a>
+
+                    <h3>Square Buttons</h3>
+                    <p>There are three containers that are centered with margin: 0 auto.</p>
+                    <button class="square-button">Button</button>
+                    <input class="square-button" type="submit" value="Submit">
+                    <input class="square-button" type="button" value="Input">
+                    <a class="square-button button ">Link</a>
+
+                    <h3>Full-Width Buttons</h3>
+                    <button class="full-button">Button</button>
+                    <input class="full-button accent-button" type="submit" value="Submit">
+                    <input class="full-button round-button" type="button" value="Input">
+                    <a class="full-button muted-button button ">Link</a>
+
+                </div>  
+                </div> 
+            </article>
+            </section>
+
+
+            <section id="Forms">
+                <div class="flex-row">
+                    <div class="full"> <h3>Forms</h3>
+                    <p>There are three containers that are centered with margin: 0 auto.</p>
+                    <div className='contactForm' >
+                    <form>
+                    <p><label>Name: <em>*</em> <br/>  <input type="text" name="name" /></label></p>
+                    <p><label>Email: <em>*</em> <br/> <input type="email" name="email" /></label></p>
+                    <select id="choose">
+                        <option disabled selected>Please select</option>
+                        <option value="option-1">Option 1</option>
+                        <option value="option-2">Option 2</option>
+                      </select>
+                    <p><label>Message:<em>*</em> <br/>  <textarea name="message"></textarea></label></p>
+                    <label><input type="checkbox">Remember Me</label>
+                    <p><button type="submit">Submit</button></p>
+                  </form>
+
+                 
+                      </div></div>  
+                </div> 
+            </section>
+
+
+
+
+            <section id="Tables">
+                <div class="flex-row">
+                    <div class="full"> <h3>Tables</h3>
+                    <p>Set to a width of 100% and ...</p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Head 1</th>
+                            <th>Head 2</th>
+                            <th>Head 3</th>
+                          </tr>
+                        </thead>
+                        <tfoot>
+                          <tr>
+                            <th>Footer 1</th>
+                            <th>Footer 2</th>
+                            <th>Footer 3</th>
+                          </tr>
+                        </tfoot>
+                        <tbody>
+                          <tr>
+                            <td>Description 1</td>
+                            <td>Description 2</td>
+                            <td>Description 3</td>
+                          </tr>
+                          <tr>
+                            <td>Description 1</td>
+                            <td>Description 2</td>
+                            <td>Description 3</td>
+                          </tr>
+                          <tr>
+                            <td>Description 1</td>
+                            <td>Description 2</td>
+                            <td>Description 3</td>
+                          </tr>
+                        </tbody>
+                      </table></div>  
+                </div> 
+            </section>
+
+
+            <section id="Lists">
+                <div class="flex-row">
+                  <div class="full"> <h3>Lists</h3>
+                    <p>There is no special styling applied to lists other than the default styling.</p>
+                    </div>
+                    <div class="half">
+                    <ul>
+                        <li>List item one
+                            <ul>
+                                <li>Nested list item</li>
+                            </ul>
+                        </li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                    </ul>
+                  </div>
+                <br/>
+                <div class="half">
+                    <ol>
+                        <li>
+                          List item one
+                          <ol>
+                            <li>Nested list item</li>
+                          </ol>
+                        </li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                      </ol></div></div>  
+               
+            </section>
+
+            <section id="Code">
+                <div class="flex-row">
+                    <div class="full"> <h3>Code</h3>
+                    <p>Code has no additional stlying, to use text as is use pre.</p>
+                    <pre><code>class Foo {
+  return bar;
+    }
+</code></pre>
+                </div>  
+                </div> 
+            </section>
+
+            <section id="Helpers">
+                <div class="flex-row">
+                    <div class="full"> <h3>Helper Classes</h3>
+                    <p>Small classes that help add additional styling on the fly.</p>
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Class</th>
+                            <th>Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>.center-text</td>
+                            <td>text-align:center</td>
+                          </tr>
+                          <tr>
+                            <td>.align-vertical</td>
+                            <td>vertical-align: center;</td>
+                          </tr>
+                          <tr>
+                            <td>.show</td>
+                            <td>display: block !important;</td>
+                          </tr>
+                          <tr>
+                            <td>.hide</td>
+                            <td>display: none !important;</td>
+                          </tr>
+                          <tr>
+                            <td>.responsive</td>
+                            <td>max-width: 100%;</td>
+                          </tr>
+                        </tbody>
+                      </table></div>  
+                </div> 
+            </section>
+
+            <section id="Media">
+                <div class="flex-row">
+                    <div class="full"> <h3>Media Queries</h3>
+                    <p>Mobile first media queries</p>
+                        
+                    <pre><code>/* Mobile First Media Queries  */
+
+/* Mobile */
+@media only screen and (min-width: 480px) {}
+                            
+/* Tablets */
+@media only screen and (min-width: 868px) {}
+                            
+/* Laptops */
+@media only screen and (min-width: 1000px) {}
+                            
+/* 4K Monitors */
+@media only screen and (min-width: 1200px) {} </code></pre>
+                    
+                        
+                </div>  
+                </div> 
+            </section>
+            <a src="/test" class="button">Test Html Elements</a>
+            </div>
+        </main>
+
+        <script>
+
+        </script>
+        
+    </body>
+</html> 
